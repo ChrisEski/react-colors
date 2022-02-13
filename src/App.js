@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ColorBox from "./Components/ColorBox";
 import Palette from "./Components/Palette";
 import seedColors from "./seedColors";
 
