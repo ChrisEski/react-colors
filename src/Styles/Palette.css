@@ -1,7 +1,11 @@
 .Palette {
   height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .Palette-colors {
   height: 90%;
+  width: 100%;
+  height: 100%;
 }
