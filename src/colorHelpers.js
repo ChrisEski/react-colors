@@ -61,12 +61,13 @@ function generatePalette(starterPalette) {
   return newPalette;
 }
 
+// Returns an array of 3 colors => [initial_color_darkened, initial_color, white] that is later passed in generateScale() to get the final 10 shades of any initial color
 function getRange(hexColor) {
   const end = "#fff";
   return [chroma(hexColor).darken(1.4).hex(), hexColor, end];
 }
 
-// Gives 10 colors (shades) based on the input color
+// Gives 10 colors (shades) based on the input color(the scale array from getRange())
 function generateScale(hexColor, numberOfColors) {
   return chroma.scale(getRange(hexColor)).mode("lab").colors(numberOfColors);
 }
