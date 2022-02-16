@@ -18,7 +18,6 @@ class ColorBox extends Component {
   }
 
   render() {
-    // Deconstruction
     const { name, background } = this.props;
     const { copied } = this.state;
 
