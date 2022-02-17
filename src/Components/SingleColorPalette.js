@@ -37,7 +37,7 @@ class SingleColorPalette extends Component {
         key={color.name}
         name={color.name}
         background={color[format]}
-        showLink={false}
+        showingFullPalette={false}
       />
     ));
 
@@ -46,6 +46,7 @@ class SingleColorPalette extends Component {
         <Navbar handleChange={this.changeFormat} showingAllColors={false} />
         <div className="Palette-colors">
           {colorBoxes}
+          {/* FIXME: The className of ColorBox of the div above, comes from the ColorBox.css .ColorBox */}
           <div className="go-back ColorBox">
             <Link to={`/palette/${id}`} className="back-button">
               GO BACK
