@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { generatePalette } from "./colorHelpers";
 import Palette from "./Components/Palette";
 import PaletteList from "./Components/PaletteList";
+import SingleColorPalette from "./Components/SingleColorPalette";
 import seedColors from "./seedColors";
 
 class App extends Component {
@@ -36,7 +37,7 @@ class App extends Component {
         <Route
           exact
           path="/palette/:paletteId/:colorId"
-          render={() => <h1>SINGLE COLOR PAGE</h1>}
+          render={() => <SingleColorPalette />}
         />
       </Switch>
       // <div>
