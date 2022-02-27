@@ -2,13 +2,11 @@ import React, { Component } from "react";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import AddToPhotos from "@material-ui/icons/AddToPhotos";
 import classNames from "classnames";
 import PaletteMetaForm from "./PaletteMetaForm";
@@ -40,7 +38,7 @@ class PaletteFormNav extends Component {
   render() {
     const { classes, open, handleDrawerOpen, palettes, handleSubmit } =
       this.props;
-    const { newPaletteName } = this.state;
+
     return (
       <div className="classes.root">
         <CssBaseline />
