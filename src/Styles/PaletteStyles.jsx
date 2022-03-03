@@ -44,6 +44,8 @@
 
 // export default styles;
 
+import sizes from "./sizes";
+
 const styles = {
   Palette: {
     height: "100vh",
@@ -63,7 +65,7 @@ const styles = {
     display: "inline-block",
     position: "relative",
     cursor: "pointer",
-    marginBottom: "-4px",
+    marginBottom: "-3.5px",
     opacity: 1,
     backgroundColor: "black",
     "& a": {
@@ -84,6 +86,18 @@ const styles = {
       textTransform: "uppercase",
       border: "none",
       textDecoration: "none",
+    },
+    [sizes.down("lg")]: {
+      width: "25%",
+      height: "33.3333%",
+    },
+    [sizes.down("md")]: {
+      width: "50%",
+      height: "20%",
+    },
+    [sizes.down("xs")]: {
+      width: "100%",
+      height: "10%",
     },
   },
 };
