@@ -30,6 +30,7 @@
 
 // export default styles;
 import sizes from "./sizes";
+import bg from "./bg.svg";
 
 const styles = {
   root: {
@@ -38,6 +39,12 @@ const styles = {
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
+    // backgroundColor: "#1e8feb",
+    // backgroundImage: `url(${bg})`,
+    overflowY: "scroll",
+  },
+  heading: {
+    fontSize: "2rem",
   },
   container: {
     width: "50%",
@@ -73,7 +80,7 @@ const styles = {
     },
     [sizes.down("xs")]: {
       gridTemplateColumns: "repeat(1, 100%)",
-      gridGap: "1rem",
+      gridGap: "1.4rem",
     },
   },
 };
