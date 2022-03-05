@@ -48,7 +48,7 @@ const styles = {
     padding: "0.5rem",
     position: "relative",
     cursor: "pointer",
-    // overflow: "hidden",
+    overflow: "hidden",
     "&:hover svg": {
       opacity: 1,
     },

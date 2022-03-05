@@ -30,9 +30,18 @@
 
 // export default styles;
 import sizes from "./sizes";
-import bg from "./bg.svg";
+// import bg from "./bg.svg";
 
 const styles = {
+  "@global": {
+    ".fade-exit": {
+      opacity: 1,
+    },
+    ".fade-exit-active": {
+      opacity: 0,
+      transition: "opacity 0.3s ease-out",
+    },
+  },
   root: {
     backgroundColor: "blue",
     height: "100vh",
