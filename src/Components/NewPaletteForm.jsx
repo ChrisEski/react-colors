@@ -12,6 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import classNames from "classnames";
 import DraggableColorList from "./DraggableColorList";
+import seedColors from "../seedColors";
 
 import styles from "../Styles/NewPaletteFormStyles";
 
@@ -23,7 +24,7 @@ class NewPaletteForm extends Component {
     super(props);
     this.state = {
       open: true,
-      colors: this.props.palettes[0].colors,
+      colors: seedColors[0].colors,
     };
     this.addNewColor = this.addNewColor.bind(this);
     this.handleChange = this.handleChange.bind(this);
