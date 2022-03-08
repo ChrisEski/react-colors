@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
+
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -10,6 +11,7 @@ import IconButton from "@material-ui/core/IconButton";
 import AddToPhotos from "@material-ui/icons/AddToPhotos";
 import classNames from "classnames";
 import PaletteMetaForm from "./PaletteMetaForm";
+
 import styles from "../Styles/PaletteFormNavStyles";
 
 class PaletteFormNav extends Component {
@@ -38,6 +40,7 @@ class PaletteFormNav extends Component {
   render() {
     const { classes, open, handleDrawerOpen, palettes, handleSubmit } =
       this.props;
+    const { formShowing } = this.state;
 
     return (
       <div className="classes.root">
@@ -80,7 +83,7 @@ class PaletteFormNav extends Component {
             </Button>
           </div>
         </AppBar>
-        {this.state.formShowing && (
+        {formShowing && (
           <PaletteMetaForm
             palettes={palettes}
             handleSubmit={handleSubmit}
